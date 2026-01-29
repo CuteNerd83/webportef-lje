@@ -1,0 +1,325 @@
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color:  #333333;
+}
+
+.navbar { 
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Archivo Black', sans-serif;
+    background-color: #989898;
+    width: 100%;
+    padding: 15px 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.nav-left, 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.home-icon {
+    font-size: 2.5rem;
+}
+
+.profil {
+    font-size: 2.5rem;
+
+}
+
+#OmMeg {
+  scroll-margin-top: 80px;
+}
+
+#section1 {
+  scroll-margin-top: 18rem;
+}
+
+#work1 {
+  scroll-margin-top: 3rem;
+}
+
+#kontakt1 {
+  scroll-margin-top: 3rem;
+}
+
+.work {
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+.envelope {
+    font-size: 2.5rem;
+}
+
+#Home {  
+    color: #000;
+    font-size: 2.5rem;
+    font-family: 'Archivo Black', sans-serif;   
+}
+
+h1 {
+    font-family: 'Zalando Sans Expanded';
+    color: #ffffff; 
+}
+
+h2 {
+    font-family: 'Zalando Sans Expanded';
+    color: #ffffff;
+}
+
+h3 {
+    font-family: 'Zalando Sans Expanded';
+    color: #ffffff;
+}
+
+#navn {
+    font-size: 12.5rem;
+    text-align: center;
+    margin-top: 300px;
+}
+
+
+#meg {
+    font-size: 8rem;
+    margin-top: 400px;
+    text-align: center;
+}
+
+.bilde {
+    display: block;
+    width: 400px;
+    margin: 50px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.hobbyer h1 {
+    font-size: 3rem;             
+    margin-bottom: 20px;
+}
+
+.hobbyer h2 {
+    font-size: 2rem;             
+    margin: 5px 0;
+    
+}
+
+.hobbyer h3 {
+    font-size: 2rem;             
+    margin: 5px 0;
+}
+.bilde {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0px;
+}
+
+.ting {
+    justify-self: start;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    transform: translate(10px, -80px); 
+}
+
+
+.ting h1 {
+    font-size: 4rem;             
+    margin-bottom: 20px;
+}
+
+.ting h2 {
+    font-size: 2rem;             
+    margin: 5px 0;
+    
+}
+
+.ting h3 {
+    font-size: 2rem;             
+    margin: 5px 0;
+}
+
+
+#arbeid {
+    font-size: 8rem;
+    text-align: center;
+}
+
+
+.s2b1,
+.s2b2 {
+    width: 400px;
+}
+
+.s2b1 {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.s2b2 {
+    position: absolute;
+    margin-top: -290px;
+    margin-left: 1020px;
+}
+
+.venstre {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.venstre p {
+  font-family: "IM Fell French Canon SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #ffffff;
+
+}
+
+.høyre p {
+  font-family: "IM Fell French Canon SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #ffffff;
+
+}
+
+.venstre {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+#pizza {
+    margin-top: -240px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#caylos {
+    margin-top: -240px;
+    margin-left: 570px;
+    font-size: 20px;
+}
+
+
+.kontaktmeg h1 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#kontakt {
+    margin-top: 90px;
+}
+
+.insta {
+    font-size: 3.5rem;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.gmail {
+    font-size: 3.5rem;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.tik {
+    font-size: 3.5rem;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 400px 1fr;
+    align-items: center;
+    column-gap: 80px;
+
+    width: 100%;
+    max-width: 1400px;
+    margin: 120px auto 0;
+    padding: 0 40px;
+}
+
+
+
+.hobbyer {
+    justify-self: end;
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    transform: translate(-100px, -100px);  
+}
+
+
+.media-container {
+    position: relative;
+    z-index: 10;
+    position: relative;
+    z-index: 10;
+    transform: translateY(-90px);
+}
+
+.ting {
+    justify-self: start;
+    text-align: left;
+}
+
+.media-container img,
+.media-container video {
+    width: 100%;
+    outline: 4px solid white;
+    outline-offset: 6px;
+    border-radius: 12px;
+    display: block;
+}
+
+.media-container video {
+    display: none;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    z-index: 20;
+}
