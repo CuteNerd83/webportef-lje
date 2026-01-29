@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IM+Fell+French+Canon+SC&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/48878a8e04.js" crossorigin="anonymous"></script> <!-- Font Awesome-->
+
+
+
+    <title>Daniel sin portofolio</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar">  <!-- navigator bar "jeg skrev dette selv sånn at det er lettere og huske hva som er hva"-->
+        <div class="nav-left">
+            <a href="#section1">
+                <span id="Home">Home</span>
+                <i class="fa-solid fa-house home-icon"></i>
+            </a>
+        </div>
+            
+        <div class="nav-right">
+
+            <a href="#OmMeg">
+            <i class="fa-solid fa-user profil"></i>
+            </a>
+
+            <a href="#work1">
+            <i class="fa-solid fa-business-time work"></i>
+            </a>
+
+            <a href="#kontakt1">
+                <i class="fa-solid fa-envelope envelope"></i>
+            </a>
+        </div>
+    </nav>
+    </header>
+    <section id="section1">
+        <h1 id="navn">Daniel</h1> 
+    </section>
+
+    <section id="OmMeg">
+        <h1 id="meg">Om meg</h1>
+
+        <div class="about-grid">
+    
+            <div class="hobbyer">
+                <h1>Mine hobbyer</h1>
+                <h2>Skateboarding</h2>
+                <h2>Snowboarding</h2>
+                <h2>Bygge pc-er</h2>
+                <h3>Mat bilder</h3>
+            </div>
+
+            <div class="media-container">
+                <img id="profileImage" src="DSC04840.JPG" alt="meg">
+                <video id="profileVideo" src="IMG_1105.mp4" controls></video>
+
+                <div class="arrow" onclick="toggleMedia()">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+            </div>
+
+            <div class="ting">
+                <h1>Andre ting</h1>
+                <h2>Åssiden vgs IM</h2>
+                <h2>16 År</h2>
+                <h2>Konnerud</h2>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="work1">
+        <h1 id="arbeid">Mat bilder</h1>
+
+        <div class="venstre">
+            <img class="s2b1" src="5F7A954B-0214-460E-B871-0849081A3B25_1_105_c.jpeg" alt="meg">
+            <p id="pizza">Deilig pizza fra rema 1000.<br>denne pizzaen ble laget<br> etter en tur i skateparken oslo.<br> en fantastisk pizza man kun får i larvik.<br> jeg er vedlig fornøyd med hvordan bilde endte opp <br> <br> solid beste bildet jeg har tatt av mat</p>
+
+        </div>
+
+        <div class="høyre"> 
+            <img class="s2b2" src="0D74CC32-F7D0-4610-B57D-C2740BECC19A_4_5005_c.jpeg" alt="meg">
+            <p id="caylos">Dette bilde ble tatt på caylos drammen.<br> meg å min venn dro hit etter en tur <br>på skateparken i drammen, vi besøkte dette stedet <br>etter at mcdonald’s var fult av folk. <br> jævlig god mat og en helt utrolig opplevelse<br> med gratis drikke.<br><br> solid andre plass på beste bilder</p>
+        </div>
+    </section>
+
+
+    <section id="kontakt1">
+        <div class="kontaktmeg">
+            <h1 id="kontakt">Kontakt Meg</h1>
+
+            <a href="https://www.instagram.com/sktb.daniel/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram insta" ></i>
+            </a>
+
+            <a href="https://mail.google.com/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-square-envelope gmail"></i>
+            </a>
+            
+            <a href="https://www.tiktok.com/@danmo2507?lang=nb" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-tiktok tik"></i>
+            </a>
+    </section>
+        </div>
+
+
+    
+<script>
+let showingImage = true;
+
+function toggleMedia() {
+    const img = document.getElementById("profileImage");
+    const video = document.getElementById("profileVideo");
+    const omMeg = document.getElementById("OmMeg");
+
+    if (showingImage) {
+        
+        img.style.display = "none";
+        video.style.display = "block";
+        video.play();
+
+        const yOffset = -120;
+        const y = video.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+        window.scrollTo({
+            top: y,
+            behavior: "smooth"
+        });
+
+    } else {
+        video.pause();
+        video.currentTime = 0;
+        video.style.display = "none";
+        img.style.display = "block";
+
+        omMeg.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+
+    showingImage = !showingImage;
+}
+</script>
+
+
+
+</body>
+</html>
+
+
+
