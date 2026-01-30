@@ -1,24 +1,24 @@
 
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;  /*  når jeg trykker på en av iconene er det smooth scrolling  */
 }
 
-* {
-    margin: 0;
+* {                         /* fjerner den vannlige padding og margin så jeg har kontroll    */
+    margin: 0;      
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 body {
     
-    background-color:  #333333;
+    background-color:  #333333;  /*  endrer bakgrunn  */
 }
 
-.navbar { 
-    position: fixed;
+.navbar {                       /* navigation bar   */
+    position: fixed;               /* gjør at den ligger på toppen i nettsiden   */
     top: 0;
-    z-index: 1000;
+    z-index: 1000;                  /*  gjør at den ligger over alt annent  */
     font-family: 'Archivo Black', sans-serif;
     background-color: #989898;
     width: 100%;
@@ -27,27 +27,30 @@ body {
     display: flex;
     justify-content: space-between;
 }
-a {
+
+a {                 /* gjør at alle linkene har samme styling   */
     color: black;
     text-decoration: none;
 }
+
+
 .nav-left, 
-.nav-right {
+.nav-right {            /* endrer på venstre og høyre siden av navbar   */
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.home-icon {
+.home-icon {                                /* Icon som er i navbar   */
     font-size: 2.5rem;
 }
 
-.profil {
+.profil {                                   /* Icon som er i navbar   */
     font-size: 2.5rem;
 
 }
 
-#OmMeg {
+#OmMeg {                    /*  når jeg trykker på ikon så justerer den så ting ikke havner bak navbar  */
   scroll-margin-top: 80px;
 }
 
@@ -72,72 +75,53 @@ a {
     font-size: 2.5rem;
 }
 
-#Home {  
+#Home {    /* hjemme siden tekst   */
     color: #000;
     font-size: 2.5rem;
     font-family: 'Archivo Black', sans-serif;   
 }
 
-h1 {
+h1, h2, h3 {        /*  overskrifter  */
     font-family: 'Zalando Sans Expanded';
     color: #ffffff; 
 }
 
-h2 {
-    font-family: 'Zalando Sans Expanded';
-    color: #ffffff;
-}
 
-h3 {
-    font-family: 'Zalando Sans Expanded';
-    color: #ffffff;
-}
-
-#navn {
+#navn {                 /*  navn på forsiden  */
     font-size: 12.5rem;
     text-align: center;
     margin-top: 300px;
 }
 
 
-#meg {
+#meg {                         /*  overskriften "om meg"   */
     font-size: 8rem;
     margin-top: 400px;
     text-align: center;
 }
 
-.bilde {
+.bilde {                /* bilder generelt   */
     display: block;
-    width: 400px;
-    margin: 50px auto;
+    width: 350px;
     max-width: 100%;
     height: auto;
+    margin: 50px auto;
 }
 
 
-.hobbyer h1 {
+.hobbyer h1 {               /* hobby seksjonen   */
     font-size: 3rem;             
     margin-bottom: 20px;
 }
 
-.hobbyer h2 {
+.hobbyer h2,
+.hobbyer h3 {
     font-size: 2rem;             
     margin: 5px 0;
     
 }
 
-.hobbyer h3 {
-    font-size: 2rem;             
-    margin: 5px 0;
-}
-.bilde {
-    width: 350px;
-    max-width: 100%;
-    height: auto;
-    margin-left: 0px;
-}
-
-.ting {
+.ting {         /*  teksten på høyre siden av bildet med videoen  */
     justify-self: start;
     text-align: left;
 
@@ -153,25 +137,21 @@ h3 {
     margin-bottom: 20px;
 }
 
-.ting h2 {
+.ting h2,
+.ting h3 {
     font-size: 2rem;             
     margin: 5px 0;
     
 }
 
-.ting h3 {
-    font-size: 2rem;             
-    margin: 5px 0;
-}
 
-
-#arbeid {
+#arbeid {           /*  mitt arbeid seksjonen */
     font-size: 8rem;
     text-align: center;
 }
 
 
-.s2b1,
+.s2b1,  /*  bilder i seksjon 2  */
 .s2b2 {
     width: 400px;
 }
@@ -183,11 +163,12 @@ h3 {
 
 .s2b2 {
     position: absolute;
-    margin-top: -290px;
+    margin-top: -520px;
     margin-left: 1020px;
 }
 
-.venstre {
+.venstre,           /*  teksten ved siden av bildet  */
+.høyre {
     display: flex;
     align-items: center;
 
@@ -195,27 +176,13 @@ h3 {
 
 
 
-.venstre p {
-  font-family: "IM Fell French Canon SC", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1rem;
-  color: #ffffff;
-
-}
-
+.venstre p,
 .høyre p {
   font-family: "IM Fell French Canon SC", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1rem;
   color: #ffffff;
-
-}
-
-.venstre {
-    display: flex;
-    align-items: center;
 
 }
 
@@ -234,7 +201,7 @@ h3 {
 }
 
 
-.kontaktmeg h1 {
+.kontaktmeg h1 {                /*  kontakt meg   */
     display: flex;
     justify-content: center;
     
@@ -244,18 +211,8 @@ h3 {
     margin-top: 90px;
 }
 
-.insta {
-    font-size: 3.5rem;
-    margin-top: 100px;
-    margin-left: 300px;
-}
-
-.gmail {
-    font-size: 3.5rem;
-    margin-top: 100px;
-    margin-left: 300px;
-}
-
+.insta,
+.gmail,
 .tik {
     font-size: 3.5rem;
     margin-top: 100px;
@@ -263,7 +220,8 @@ h3 {
 }
 
 
-.about-grid {
+
+.about-grid {           /* grid for om meg delen "KI" dessverre klarte jeg ikke å fikse selv   */  
     display: grid;
     grid-template-columns: 1fr 400px 1fr;
     align-items: center;
@@ -277,7 +235,7 @@ h3 {
 
 
 
-.hobbyer {
+.hobbyer {          /*  hobby tekst på høyre siden */
     justify-self: end;
     text-align: right;
 
@@ -288,7 +246,7 @@ h3 {
 }
 
 
-.media-container {
+.media-container {          /*  bilde og video container som er i midten  */
     position: relative;
     z-index: 10;
     position: relative;
@@ -296,12 +254,10 @@ h3 {
     transform: translateY(-90px);
 }
 
-.ting {
-    justify-self: start;
-    text-align: left;
-}
 
-.media-container img,
+
+
+.media-container img,       
 .media-container video {
     width: 100%;
     outline: 4px solid white;
@@ -310,11 +266,11 @@ h3 {
     display: block;
 }
 
-.media-container video {
+.media-container video {        /* skjuler videoen sånn at den kun er der når den skal   */
     display: none;
 }
 
-.arrow {
+.arrow {                /* pilen som bytter fra bilde til video eller video til bilder   */
     position: absolute;
     top: 50%;
     left: -60px;
@@ -323,3 +279,5 @@ h3 {
     cursor: pointer;
     z-index: 20;
 }
+
+
